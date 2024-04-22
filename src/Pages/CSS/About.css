@@ -1,0 +1,82 @@
+.image{
+    width: 50px;
+}
+
+.image1{
+    width: 63px;
+}
+
+.image2{
+    width: 50px;
+    font-weight: bold;
+}
+
+.about-us{
+    width: auto;
+}
+
+.Whoweare{
+    background-image: url('../CSS/aboutbanner.png');
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image within the container */
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Whoweare h1{
+    color: white;
+    font-size: 50px;
+}
+
+.container{
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.container h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.container p{
+    font-size: 17px;
+    text-align: justify;
+}
+
+.small_container{
+    padding: 20px 20px;
+}
+
+.mini_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    color: rgb(193, 50, 50);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container h2 {
+      font-size: 30px;
+    }
+  
+    .container p {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container h2 {
+      font-size: 24px;
+    }
+  
+    .container p {
+      font-size: 14px;
+    }
+  
+    .Whoweare h1 {
+      font-size: 36px;
+    }
+  }

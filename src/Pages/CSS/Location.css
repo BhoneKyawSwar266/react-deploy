@@ -1,0 +1,70 @@
+.container{
+    margin: 20px 40px;
+}
+
+.header{
+    padding: 10px 0px;
+}
+
+.header h1{
+    margin-bottom: 15px;
+    color: rgb(236, 45, 45);
+}
+
+.header p{
+ text-align: justify;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.location p{
+    font-size: 20x;
+    font: bold;
+    font-weight: 700;
+}
+
+.googlemap{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .location p {
+        font-size: 18px;
+    }
+
+    .googlemap iframe {
+        width: 100%; /* Make the map fill the container width */
+        height: 300px; /* Set a fixed height */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .location p {
+        font-size: 16px;
+    }
+
+    .googlemap iframe {
+        height: 300px; /* Decrease the height for smaller screens */
+    }
+}

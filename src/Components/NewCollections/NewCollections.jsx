@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/newcollection")
+    fetch("https://vicherserver.onrender.com/newcollection")
       .then((res) => {
         if (!res.ok) {
           throw new Error('Failed to fetch');

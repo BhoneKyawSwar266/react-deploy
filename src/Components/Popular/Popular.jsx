@@ -7,7 +7,7 @@ const Popular = () => {
   const[popular , setpopular] = useState([]);
 
   useEffect((e)=>{
-    fetch ('http://localhost:4000/popularinlaptop')
+    fetch ('https://vicherserver.onrender.com/popularinlaptop')
     .then((res)=> res.json())
     .then((data)=> setpopular(data))
   },[])

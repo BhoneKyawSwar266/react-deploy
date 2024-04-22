@@ -15,7 +15,7 @@ const RelatedProduct = () => {
     const fetchRelatedProducts = async () => {
         try {
             // Make a GET request to fetch all products
-            const response = await fetch('http://localhost:4000/allproducts');
+            const response = await fetch('https://vicherserver.onrender.com/allproducts');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
